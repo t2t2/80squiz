@@ -1,0 +1,93 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>The Superchallenge of 80's Knowledge!</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<header>
+		<h1>The Superchallenge of<br />80's Knowledge!</h1>
+	</header>
+	<div class="container" role="main">
+		<table id="scores">
+			<tr>
+				<th>Brian</th>
+				<th>Justin</th>
+				<th>Ernie</th>
+			</tr>
+			<tr>
+				<td id="score-Brian"></td>
+				<td id="score-Justin"></td>
+				<td id="score-Ernie"></td>
+			</tr>
+		</table>
+		<div id="question">
+		</div>
+		<div class="choices">
+			<div class="row lockedin">
+				<div class="span9">&nbsp;</div>
+				<div class="span1" id="locked-Brian">Brian</div>
+				<div class="span1" id="locked-Justin">Justin</div>
+				<div class="span1" id="locked-Ernie">Ernie</div>
+			</div>
+			<div id="answerrow-1" class="row answer">
+				<div class="span1"><button id="choice-1" data-answer="1" class="btn choice" disabled>1</button></div>
+				<div class="span8 answer-text" id="answer-1">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-1-Brian">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-1-Justin">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-1-Ernie">&nbsp;</div>
+			</div>
+			<div id="answerrow-2" class="row answer">
+				<div class="span1"><button id="choice-2" data-answer="2" class="btn choice" disabled>2</button></div>
+				<div class="span8 answer-text" id="answer-2">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-2-Brian">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-2-Justin">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-2-Ernie">&nbsp;</div>
+			</div>
+			<div id="answerrow-3" class="row answer">
+				<div class="span1"><button id="choice-3" data-answer="3" class="btn choice" disabled>3</button></div>
+				<div class="span8 answer-text" id="answer-3">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-3-Brian">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-3-Justin">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-3-Ernie">&nbsp;</div>
+			</div>
+			<div id="answerrow-4" class="row answer">
+				<div class="span1"><button id="choice-4" data-answer="4" class="btn choice" disabled>4</button></div>
+				<div class="span8 answer-text" id="answer-4">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-4-Brian">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-4-Justin">&nbsp;</div>
+				<div class="span1 player-choice" id="answer-4-Ernie">&nbsp;</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<button id="lockin" class="btn btn-primary" disabled>Lock in!</button>
+			<button id="pingt2t2" class="btn">Ping t2t2</button>
+		</div>
+		<div id="admin" style="display: none;">
+			<button class="admin-btn btn" data-admin="next">Next question</button>
+			<button class="admin-btn btn" data-admin="score">Score</button>
+		</div>
+	</div>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script type="text/javascript" src="nowjs/now.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
